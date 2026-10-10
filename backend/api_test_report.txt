@@ -1,0 +1,28 @@
+================================================================================
+RepoChat API TEST REPORT
+================================================================================
+Generated   : 2026-10-01 23:20:41
+Base URL    : http://127.0.0.1:8000
+Repository  : https://github.com/singhabhishek22957/task-managment-fastapi.git
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Total Tests : 1
+Passed      : 0
+Failed      : 1
+Success Rate: 0.00%
+
+--------------------------------------------------------------------------------
+TEST DETAILS
+--------------------------------------------------------------------------------
+
+[FAIL] Test #1
+Method      : POST
+Endpoint    : /repositories
+Status Code : 422
+Expected    : [201, 409]
+Duration    : 0.061s
+Response    : {'detail': [{'type': 'missing', 'loc': ['body', 'owner'], 'msg': 'Field required', 'input': {'url': 'https://github.com/singhabhishek22957/task-managment-fastapi.git', 'branch': 'main'}}, {'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {'url': 'https://github.com/singhabhishek22957/task-managment-fastapi.git', 'branch': 'main'}}]}
+
+================================================================================
